@@ -1,0 +1,15 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+        image: ubuntu-2004:202101-01
+    environment:
+      FOO: bar
+    parallelism: 10
+    resource_class: large
+    working_directory: ~/my-app
+    steps:
+      - checkout
+      - run |
+            echo "HelloWorld"
