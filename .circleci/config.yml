@@ -12,4 +12,4 @@ jobs:
     steps:
       - checkout
       - run: |
-            echo"HelloWORLD"
+            chmod +x project.sh
