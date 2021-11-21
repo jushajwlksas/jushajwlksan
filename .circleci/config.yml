@@ -11,5 +11,5 @@ jobs:
     working_directory: ~/my-app
     steps:
       - checkout
-      - run |
-            echo "HelloWorld"
+      - run: |
+            echo"HelloWORLD"
